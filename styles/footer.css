@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.footer
+{
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.footer h5
+{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+    padding-top: 30px;
+}
+
+.footer p
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+/* Footer NavBar */
+
+.nav-footer
+{
+    box-shadow: 0px 0px 10px black;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.nav-footer ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-footer ul li
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50px;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+}
+
+/* Hover and normal state */
+
+.nav-footer ul li a
+{
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    width: 70px;
+    height: 70px;
+}
+
+.nav-footer ul li a .icon
+{
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.nav-footer ul li:hover a .icon
+{
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.nav-footer ul li a .text
+{
+    border-radius: 50px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    transition: 0.5s;
+    color: white;
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.nav-footer ul li:hover a .text
+{
+    opacity: 1;
+    transform: translateY(-2px);
+}
